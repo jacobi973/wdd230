@@ -1,2 +1,3 @@
 document.getElementById('copyrightyear').textContent = new Date().getFullYear();
-document.getElementById('last-updated').textContent = `${new Date().getDay()}/${new Date().getMonth()}/${new Date().getFullYear()} ${new Date().toLocaleTimeString()}`;
+// document.getElementById('last-updated').textContent = `${new Date().getDay()}/${new Date().getMonth()}/${new Date().getFullYear()} ${new Date().toLocaleTimeString()}`;
+document.getElementById('last-updated').textContent = `${new Date(document.lastModified).getMonth()}/${new Date(document.lastModified).getDate()}/${new Date(document.lastModified).getFullYear()} ${new Date(document.lastModified).toLocaleTimeString()}`;

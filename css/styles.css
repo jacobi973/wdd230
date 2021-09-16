@@ -7,7 +7,7 @@ header, main, footer {
     margin: 0 auto;
 } 
 header, footer{
-    background: green;
+    background: hsl(106, 57%, 50%);
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
