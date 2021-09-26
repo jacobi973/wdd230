@@ -7,7 +7,7 @@ h1, h2, h3{
 }
 
 body {
-  max-width: 900px;
+  max-width: 1800px;
   margin: 0 auto;
   background-color: #5b446a;
 }
@@ -19,9 +19,15 @@ header {
   color: white;
   padding: 1em;
 }
+
 h1 {
-  margin: 0.25em;
+  margin: .25em;
 }
+
+h2 {
+  text-align: center;
+}
+
 header span {
   font-size: 1rem;
   color: #5b446a;
@@ -34,32 +40,26 @@ main {
   width: 95%;
   margin: 20px auto;
 }
+
 section {
   border-radius: 10px;
   background-color: white;
   border: solid 1px gray;
   overflow: hidden;
 }
-section * {
-  font-family: 'Ubuntu', sans-serif;
-}
+
+
 h3 {
   margin: 0;
-  font-family: 'Gugi', sans-serif;
   padding: 10px;
-  /* text-align: center; */
-  background: hsl(106, 57%, 50%);
+  background: #4b446a;
   color: white;
 }
+
 section div {
   padding: 0 10px;
 }
-section > div > span {
-  display: block;
-}
-section div * {
-  font-size: 1.05em;
-}
+
 section img {
   width: calc(100% - 2px);
   display: block;
@@ -71,12 +71,11 @@ section img {
 footer {
   text-align: center;
   background-color: hsl(106, 57%, 50%);
-  border-radius: 10px 10px 0 0;
+  border-radius: 5px;
   padding: 1em;
 }
-#lst-updt {
-  padding-top: 5px;
-  display: block;
-  font-size: small;
-  color: #5b446a;
+
+a {
+  text-align: center;
+  display: grid;
 }
