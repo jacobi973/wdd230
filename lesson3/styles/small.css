@@ -1,0 +1,34 @@
+body {
+    grid-template-columns: auto 95% auto;
+}
+
+header {
+    box-shadow: 0 0 10px #2f2f2f;
+}
+
+header h1 {
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.domain-name {
+    margin-left: 0rem;
+}
+
+nav {
+    position: static;
+}
+
+nav>ul {
+    grid-template-columns: 1fr;
+}
+
+section.grid {
+    grid-template-columns: 1fr;
+}
+
+section.grid img {
+    max-width: 300px;
+    justify-self: center;
+}

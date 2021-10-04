@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Yaldevi:wght@500&display=swap');
+
+html {
+    background-color: #336699;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 80% auto;
+}
+
+body>* {
+    grid-column: 2;
+}
+
+h1,
+h2,
+h3,
+h4,
+th {
+    font-family: 'Yaldevi', sans-serif;
+}
+
+p,
+span,
+div,
+li,
+td,
+a {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Styles for the header and elements inside the header */
+header {
+    z-index: 10;
+    padding: 1rem;
+    position: relative;
+    text-align: center;
+    background-image: url("../images/storm-1920.jpg");
+    background-size: 100rem 9.5rem;
+    box-shadow: 0 0 10px #2e8b57;
+}
+
+header>span {
+    display: block;
+    color: #FFDF00;
+    padding-bottom: 1rem;
+}
+
+h1 {
+    color: yellow;
+    margin-bottom: 0.75rem;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+}
+
+nav>ul {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    box-shadow: 0 0 10px #2f2f2f;
+}
+
+nav a {
+    /* It doesn't work to have this one with the other css block */
+    height: calc(100% - 2em);
+}
+
+nav a,
+span.navR {
+    z-index: 8;
+    padding: 1em 0;
+    display: block;
+    margin-right: 0;
+    width: calc(100%);
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #2f2f2f;
+    box-shadow: 0 0 10px #2f2f2f;
+}
+
+nav a.at,
+nav a:active,
+span.navA {
+    background-color: #2e8b57;
+    box-shadow: 0 0 10px #2e8b57;
+    font-weight: bold;
+    padding: 1em 0;
+    z-index: 9;
+}
+
+nav a:hover,
+span.navH {
+    background-color: #FFDF00;
+    box-shadow: 0 0 10px #FFDF00, inset 0 0 10px #2e8b57;
+    color: #2e8b57;
+    font-weight: bold;
+    padding: 1em 0;
+    z-index: 7;
+}
+
+main {
+    padding: 1px 1em;
+    background-color: #ffffff;
+}
+
+h2,
+.color-scheme h3 {
+    color: #2e8b57;
+}
+
+.color-scheme h2 h3,
+h4 {
+    color: #2f2f2f;
+}
+
+section {
+    padding: 0 1em;
+}
+
+section.grid {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 256px 1fr;
+}
+
+section.grid>img {
+    width: 80%;
+    justify-self: left;
+}
+
+table {
+    margin: 0 auto;
+}
+
+span.navF {
+    background-color: #2e8b57;
+    color: #ffffff;
+    text-decoration: underline #336699;
+    padding: 0.5rem;
+}
+
+span.navFH {
+    background-color: #2e8b57;
+    color: #ffffff;
+    text-shadow: 0 0 10px #336699;
+    text-decoration: underline #336699;
+}
+
+h4 {
+    margin-left: 15px;
+}
+
+h4+p {
+    margin-left: 30px;
+}
+
+
+/* Styles for the footer and it's child elements */
+footer {
+    box-shadow: 0 0 10px #2f2f2f;
+    background-image: url("../images/storm-1920.jpg");
+    background-size: 50rem 10rem;
+    color: #FFDF00;
+    text-align: center;
+    position: relative;
+    padding: 1rem;
+    z-index: 10;
+}
+
+footer a {
+    color: #FFDF00;
+    text-decoration: underline #FFDF00;
+}
+
+footer a:hover {
+    text-shadow: 1px 1px 10px #FFDF00;
+}
+
+.last-updated {
+    padding-top: 0.5rem;
+    display: block;
+    font-size: 0.9rem;
+    color: #FFDF00;
+}
+
+.domain-name {
+    margin-left: 16rem;
+}
+
+.color-scheme h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.color-scheme table {
+    margin: 0 auto;
+    width: 80%;
+    border-spacing: .2em;
+    padding: 2rem;
+}
+
+.color-scheme table tr td {
+    border: 1px #555 solid;
+    border-radius: .25em;
+    padding: 1rem;
+}
+
+.color-scheme table tr td:nth-of-type(1) {
+    font-weight: bold;
+}
+
+.color-scheme table tr td:nth-of-type(2) {
+    color: #fff;
+    font-weight: bold;
+}
+
+.color-scheme table tr:nth-of-type(3) td:nth-of-type(2) {
+    color: black;
+    font-weight: bold;
+}
+
+.primary-color {
+    background-color: #336699;
+}
+
+.secondary-color {
+    background-color: #2e8b57;
+}
+
+.accent1-color {
+    background-color: #FFDF00;
+}
+
+.accent2-color {
+    background-color: #2f2f2f;
+}
+
+.typography table,
+th,
+td {
+    border: 1px solid black;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.typography h4 {
+    color: black;
+}
