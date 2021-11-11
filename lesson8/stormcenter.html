@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Examples of design principles">
+    <link rel="favicon" href="favicon.ico">
+    <link rel="stylesheet" href="/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Storm Center</title>
+</head>
+
+<body>
+    <header>
+        <h1><img src="images/Weather Logo-1.png" alt="sunny cloud">highfrontweather.com</h1>
+    </header>
+    <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a class="menu" href="../lesson9/index.html">Home</a></li>
+            <li><a href="../lesson10/preston.html">Preston</a></li>
+            <li><a href="../lesson11/fishhaven.html">Fish Haven</a></li>
+            <li><a href="../lesson11/sodasprings.html">Soda SPrings</a></li>
+            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson7/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Report Severe Weather</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">Full Name*<input type="text" name="fname" pattern="[A-Za-z].{5,}" required
+                        placeholder="Please enter your full name"></label>
+                <label class="top">Phone*<input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Email<input type="email" name="email" placeholder="someone@gmail.com"></label>
+                <label class="top">ZipCode*<input type="number" name="zipcode" required placeholder="00000"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Storm Details</legend>
+                <label class="top">Storm Date<input type="date" name="stormdate"></label>
+                <label class="top">Type of Storm<input list="stormtype">
+                    <datalist id="stormtype">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                    </datalist>
+                </label>
+                <label class='top'>Storm Severity (1 - 10) <input type="range" id="rate" value="5" min="1" max="10"
+                        step="1" list="points"></label>
+                <datalist id='points'>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                    <option value="3"></option>
+                    <option value="4"></option>
+                    <option value="5"></option>
+                    <option value="6"></option>
+                    <option value="7"></option>
+                    <option value="8"></option>
+                    <option value="9"></option>
+                    <option value="10"></option>
+                </datalist>
+
+                <label class="top">Storm Region
+                    <select name="region">
+                        <option>Select Region &#9662</option>
+                        <option>Preston</option>
+                        <option>Soda Springs</option>
+                        <option>Fish Haven</option>
+                    </select>
+                </label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Additonal Information</legend>
+                <h3>Are You in Danger?</h3>
+                <label class="radio"><input type="radio" name="danger" value="yes">Yes</label><br>
+                <label class="radio"><input type="radio" name="danger" value="no">No</label><br>
+                <label class="radio"><input type="radio" name="danger" value="maybe">Maybe</label>
+                <h3>Additional Information or Comments</h3>
+                <textarea type="comments" id="comments" cols="40" rows="6"></textarea>
+            </fieldset>
+            <input type="submit" value="Report a Storm" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        &copy; <span id="copyrightyear"></span> | Jacob Terrell | Idaho | <a href="https://www.byui.edu/online">BYUI
+            Online Learning</a>
+    </footer>
+    <script src="../js/dates.js"></script>
+
+</body>
+
+</html>

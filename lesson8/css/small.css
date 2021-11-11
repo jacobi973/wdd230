@@ -1,0 +1,136 @@
+/*Basic CSS header for weather page*/
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #F5F5DC;
+}
+
+body header h1 img {
+    padding: 10px;
+    max-width: 0 auto;
+}
+
+header,
+footer {
+    display: flex;
+    flex-flow: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: lightslategray;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: lightcoral;
+    padding: 0
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: black;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li a.menu {
+    background-color: lightcoral;
+}
+
+nav ul li a:hover {
+    background-color: lightpink;
+}
+
+nav ul.hide {
+    display: none;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 10px;
+}
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+form fieldset {
+    margin: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: black;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+    color: black;
+    font-size: .8rem;
+}
+
+form label.top input,
+form label.top select {
+    display: block;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .75rem;
+    width: 85%;
+    background-color: lightgray;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: olivedrab;
+    color: white;
+    border-radius: 1rem;
+    padding: .75 rem 1.5 rem;
+    margin: 0 0 2rem 2%;
+    width: 85%;
+    font-size: 44px;
+}
+
+form label.top input:required {
+    border-left: tomato solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: olivedrab solid 6px;
+}
