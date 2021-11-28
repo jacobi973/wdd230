@@ -7,11 +7,9 @@ header h1 {
     margin-left: auto;
     margin-right: auto;
 }
-
 nav ul {
     grid-template-columns: 1fr;
 }
-
 nav ul .toggler {
     display: block;
 }
@@ -19,25 +17,13 @@ nav ul .toggler {
 nav li.toggler a:hover {
     cursor: pointer;
 }
-
-nav ul li.hide~* a {
+nav ul li.hide ~ * a {
     padding: 0;
     height: 0;
 }
-
 .boxed {
     max-width: 100%;
-}
-
-.summary {
-    display: none !important;
-}
-.hero-small, .hero-small h4{
-    display: grid;
-    grid-template-columns: 170px;
-    position: sticky;
-    background: #cdd0f3;
-    color: black;
-    padding: 10px;
-    margin-top: 10px;
+  }
+  div.hero section {
+    bottom: 35rem;
 }

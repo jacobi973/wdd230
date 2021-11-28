@@ -355,3 +355,6 @@ section.contact-info div.social-links {
     max-width: 40%;
     color: white;
 }
+.hero-small{
+    display: none;
+}
