@@ -1,0 +1,6 @@
+main.gallery {
+    grid-template-columns: 1fr 1fr;
+}
+main.gallery picture:last-child {
+    grid-column: span 2;
+}
