@@ -1,0 +1,13 @@
+body {
+    grid-template-columns: auto 90% auto;
+}
+
+.background {
+    display: none;
+}
+.form{
+    grid-template-columns: 1fr;
+}
+form {
+    max-width: 600px;
+}
