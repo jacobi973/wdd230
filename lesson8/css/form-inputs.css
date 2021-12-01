@@ -84,7 +84,6 @@ input[type="radio"], input[type="checkbox"] {
 
 .bottom {
 	display: flex;
-	align-content: bottom;
 }
 
 .sbutton {

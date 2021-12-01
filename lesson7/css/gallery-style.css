@@ -370,23 +370,23 @@ main.gallery h2 {
     margin-top: 1.25em;
     grid-column: 1 / -1;
 }
-main.gallery picture {
+main.gallery figure {
     padding: 0.5em;
     border-radius: 10px;
 }
 
-main.gallery picture:hover {
+main.gallery figure:hover {
     box-shadow: 10px 8px 10px 12px #202788
 }
-main.gallery picture img {
+main.gallery figure img {
     display: block;
     border-radius: 10px;
 }
-main.gallery picture figcaption {
+main.gallery figure figcaption {
     padding: 0.5em;
     text-align: center;
 }
-main.gallery picture img {
+main.gallery figure img {
     animation: img-come-in 1.5s;
 }
 
