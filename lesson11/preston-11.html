@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Town Page</title>
+    <meta name="description" content="Watching for all sorts of weather in Preston Idaho">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/small.css" media="(max-width: 850px)">
+    <script defer src="../js/dates.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload='getTownWeather(5604473)'>
+    <div class="hold-it-together-1"></div>
+    <div class="hold-it-together-2"></div>
+    <header>
+        <h1>Storm Funnel</h1>
+        <span> Watch out for the Storms Brewing</span>
+        <img src="images/stormFunnel.png" alt="StormFunnel website logo">
+    </header>
+    <nav>
+        <ul>
+            <li class="toggler hide"><a onclick="toggleMenu()">&#9748; Menu</a></li>
+            <li><a href="../lesson9/index.html">Home</a></li>
+            <li><a class="at" href="preston-11.html">Preston</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="banner">
+            <div>
+                <div class="boxed">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
+                    pavilion. <i onclick="closeBanner()" class="fa fa-close"></i></div>
+            </div>
+        </div>
+        <h2>Preston Idaho</h2>
+        <div class="hero">
+            <picture>
+                <source srcset="./images/wdd230_image_Small.jpg" media="(max-width: 750px)">
+                <source srcset="./images/wdd230_image_Medium.jpg" media="(max-width: 1250px)">
+                <img src="./images/wdd230_image_franklinoriginalLarge.jpg" alt="largeImg">
+            </picture>
+            <section class="summary">
+                <h4>Weather</h4>
+                <span>Currently: <span class="currently">Cloudy</span></span>
+                <span>High: <span class="temperature">50</span>F&deg;</span>
+                <span>Wind Chill: <span class="wind-chill"></span>&deg;F</span>
+                <span>Humidity: <span class="humidity">50</span></span>
+                <span>Wind Speed: <span class="wind-speed">10</span> mph</span>
+            </section>
+        </div>
+        <section class="forecast">
+            <h2>5 Day Forecast</h2>
+            <div class="five-day" style="overflow-x:auto;">
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th id="day1"><i class="fa fa-spinner fa-spin"></i>Loading</th>
+                            <th id="day2"><i class="fa fa-spinner fa-spin"></i>Loading</th>
+                            <th id="day3"><i class="fa fa-spinner fa-spin"></i>Loading</th>
+                            <th id="day4"><i class="fa fa-spinner fa-spin"></i>Loading</th>
+                            <th id="day5"><i class="fa fa-spinner fa-spin"></i>Loading</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div id="weather-icon1"></div>
+                                <span id="temp1"><i class="fa fa-spinner fa-spin"></i>Loading</span>
+                            </td>
+                            <td>
+                                <div id="weather-icon2"></div>
+                                <span id="temp2"><i class="fa fa-spinner fa-spin"></i>Loading</span>
+                            </td>
+                            <td>
+                                <div id="weather-icon3"></div>
+                                <span id="temp3"><i class="fa fa-spinner fa-spin"></i>Loading</span>
+                            </td>
+                            <td>
+                                <div id="weather-icon4"></div>
+                                <span id="temp4"><i class="fa fa-spinner fa-spin"></i>Loading</span>
+                            </td>
+                            <td>
+                                <div id="weather-icon5"></div>
+                                <span id="temp5"><i class="fa fa-spinner fa-spin"></i>Loading</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="article">
+            <div class="img-holder">
+                <img src="./images/weather-article-img.jpg" alt="article">
+            </div>
+            <h2>The Sky Above Us</h2>
+            <h4>By: NASA/Goddard Space Flight Center</h4>
+            <p>
+                Using observations from NASA's ICON mission, scientists presented the first direct measurements of
+                Earth's long-theorized dynamo on the edge of space: a wind-driven electrical generator that spans the
+                globe 60-plus miles above our heads. The dynamo churns in the ionosphere, the electrically charged
+                boundary between Earth and space. It's powered by tidal winds in the upper atmosphere that are faster
+                than most hurricanes and rise from the lower atmosphere, creating an electrical environment that can
+                affect satellites and technology on Earth.
+            </p>
+            <a href="https://www.sciencedaily.com/releases/2021/11/211129172751.htm">Read More Here</a>
+        </section>
+        <section class="events">
+            <button type="button" class="style-1" onclick="getTownEvents('Preston')">Click Here to see Preston
+                Events</button>
+        </section>
+        <section class="contact-info">
+            <iframe src="https://maps.google.com/maps?q=preston%20idhao&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <h3>Contact Information</h3>
+            <ul class="fa-ul">
+                <li>123 Preston, ID 88888</li>
+                <li>(555) 555-5555</li>
+                <li>stormFunnelWatcher@gams.com</li>
+            </ul>
+            <div class="social-links">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            &copy; <span id="copyrightyear"></span> | Jacob Terrell | Idaho | <a href="https://www.byui.edu/online">BYUI
+                Online Learning</a>
+        </div>
+        Last Updated: <span id="last-updated"></span>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>

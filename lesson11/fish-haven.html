@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fish Haven Town Page</title>
+    <meta name="description" content="Watching for all sorts of weather in Fish Haven Idaho">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/medium.css" media="(max-width: 979px)">
+    <link rel="stylesheet" href="css/small.css" media="(max-width: 850px)">
+    <script defer src="../js/dates.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload='getTownWeather(5585010)'>
+    <div class="hold-it-together-1"></div>
+    <div class="hold-it-together-2"></div>
+    <header>
+        <h1>Storm Funnel</h1>
+        <span> Watch out for the Storms Brewing</span>
+        <img src="images/stormFunnel.png" alt="StormFunnel website logo">
+    </header>
+    <nav>
+        <ul>
+            <li class="toggler hide"><a onclick="toggleMenu()">&#9748; Menu</a></li>
+            <li><a href="../lesson9/index.html">Home</a></li>
+            <li><a href="preston-11.html">Preston</a></li>
+            <li><a href="soda-springs.html">Soda Springs</a></li>
+            <li><a class="at" href="fish-haven.html">Fish Haven</a></li>
+            <li><a href="../lesson8/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson7/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Fish Haven Idaho</h2>
+        <div class="hero">
+            <picture>
+                <source srcset="./images/vector-sardine-fish-background_2_750x300.jpg" media="(max-width: 750px)">
+                <source srcset="./images/vector-sardine-fish-background_1_979x300.jpg" media="(max-width: 1250px)">
+                <img src="./images/vector-sardine-fish-background_1920x300.jpg" alt="largeImg">
+            </picture>
+            <section class="summary">
+                <h4>Weather</h4>
+                <span>Currently: <span class="currently">Cloudy</span></span>
+                <span>High: <span class="temperature">50</span>F&deg;</span>
+                <span>Wind Chill: <span class="wind-chill"></span>&deg;F</span>
+                <span>Humidity: <span class="humidity">50</span></span>
+                <span>Wind Speed: <span class="wind-speed">10</span> mph</span>
+            </section>
+        </div>
+        <section class="forecast">
+            <h2>5 Day Forecast</h2>
+            <div class="five-day" style="overflow-x:auto;">
+                <table class="tg">
+                    <thead>
+                        <tr>
+                            <th id="day1"><i class="fa fa-spinner fa-spin"></i>Loading</th>
+                            <th id="day2"><i class="fa fa-spinner fa-spin"></i>Loading</th>
+                            <th id="day3"><i class="fa fa-spinner fa-spin"></i>Loading</th>
+                            <th id="day4"><i class="fa fa-spinner fa-spin"></i>Loading</th>
+                            <th id="day5"><i class="fa fa-spinner fa-spin"></i>Loading</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div id="weather-icon1"></div>
+                                <span id="temp1"><i class="fa fa-spinner fa-spin"></i>Loading</span>
+                            </td>
+                            <td>
+                                <div id="weather-icon2"></div>
+                                <span id="temp2"><i class="fa fa-spinner fa-spin"></i>Loading</span>
+                            </td>
+                            <td>
+                                <div id="weather-icon3"></div>
+                                <span id="temp3"><i class="fa fa-spinner fa-spin"></i>Loading</span>
+                            </td>
+                            <td>
+                                <div id="weather-icon4"></div>
+                                <span id="temp4"><i class="fa fa-spinner fa-spin"></i>Loading</span>
+                            </td>
+                            <td>
+                                <div id="weather-icon5"></div>
+                                <span id="temp5"><i class="fa fa-spinner fa-spin"></i>Loading</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section class="article">
+            <div class="img-holder">
+                <img src="./images/christoph.stopka_133813_748596_21013a940d_c1d438b4f9-christoph-stopka-ice-reflections-in-clouds-op_392x360.jpg" alt="article">
+            </div>
+            <h2>Ice Clouds</h2>
+            <h4>By: Research Organization of Information and Systems</h4>
+            <p>
+                Global warming is causing a rapid decline in sea-ice area, which affects weather patterns and,
+                surprisingly, increases wave height in the Arctic. In a new study, Japanese scientists analyzed data
+                from a 2018 research expedition into Chukchi Sea to demonstrate the peculiar link that exists between
+                sea spray induced by high waves and the formation of ice-containing clouds. Their results pave the way
+                for more accurate climate change and sea-ice models.
+            </p>
+            <a href="https://www.sciencedaily.com/releases/2021/09/210917090422.htm">Read More Here</a>
+        </section>
+        <section class="events">
+            <button type="button" class="style-1" onclick="getTownEvents('Fish Haven')">Click Here to see Fish Haven
+                Events</button>
+        </section>
+        <section class="contact-info">
+            <iframe src="https://maps.google.com/maps?q=fish%20haven%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <h3>Contact Information</h3>
+            <ul class="fa-ul">
+                <li>123 Fish Haven, ID 88888</li>
+                <li>(555) 555-5555</li>
+                <li>stormFunnelWatcher@gams.com</li>
+            </ul>
+            <div class="social-links">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            &copy; <span id="copyrightyear"></span> | Jacob Terrell | Idaho | <a href="https://www.byui.edu/online">BYUI
+                Online Learning</a>
+        </div>
+        Last Updated: <span id="last-updated"></span>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/windchill.js"></script>
+</body>
+
+</html>
