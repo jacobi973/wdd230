@@ -169,9 +169,10 @@ section.summary span.colored {
 div.hero {
     z-index: 1;
     position: relative;
-    background-image: url("../images/backgroundStormFunnel.jpg");
+    background-image: url("../images/backgroundStormFunnel_1920x300.jpg");
     background-size: cover;
-    min-height: 200px;
+    height: 20%;
+    margin-top: 10px;
 }
 
 div.hero section {
