@@ -1,37 +1,28 @@
 function toggleMenu() {
-    var temp = document.getElementsByClassName("toggler")[0]
-    temp.classList.toggle("hide")
+    var temp = document.getElementsByClassName("toggler")[0];
+    temp.classList.toggle("hide");
     if (temp.classList[1] == "hide") {
-        document.querySelector(".toggler > a").innerHTML = "&#9748; Menu"
+        document.querySelector(".toggler > a").innerHTML = "&#9748; Menu";
     } else {
-        document.querySelector(".toggler > a").innerHTML = "&#10060; Close"
+        document.querySelector(".toggler > a").innerHTML = "&#10060; Close";
     }
 }
 if (new Date().getDay() == 5) {
-    document.getElementById("banner").style.display = "grid"
+    document.getElementById("banner").style.display = "grid";
 }
 
 function closeBanner() {
-    document.getElementById("banner").style.display = "none"
+    document.getElementById("banner").style.display = "none";
 }
 
 const d = new Date();
-
-const weekday = new Array(7);
-weekday[0] = "Sunday";
-weekday[1] = "Monday";
-weekday[2] = "Tuesday";
-weekday[3] = "Wednesday";
-weekday[4] = "Thursday";
-weekday[5] = "Friday";
-weekday[6] = "Saturday";
-
-var today = new Date().getDay()
+const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const today = new Date().getDay()
 for (let i = 0; i < 5; i++) {
     if (d.getDay() + i > 6) {
-        document.getElementById(`day${i + 1}`).textContent = weekday[0];
+        document.getElementById(`day${i + 1}`).textContent = weekdays[0];
     } else {
-        document.getElementById(`day${i + 1}`).textContent = weekday[d.getDay() + i];
+        document.getElementById(`day${i + 1}`).textContent = weekdays[d.getDay() + i];
     }
 
 }

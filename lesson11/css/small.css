@@ -24,18 +24,18 @@ nav ul li.hide ~ * a {
 .boxed {
     max-width: 100%;
   }
-  div.hero section {
-    bottom: 35rem;
-}
-.hero{
-    max-height: 20%;
-}
+
 table{
     width: 5px;
 }
-.forecast{
-    margin-top: -80px;
-}
 .events section{
     width: 300px;
+}
+div.hero section {
+    position: unset;
+    bottom: unset;
+    width: unset;
+}
+.forecast{
+    margin-top: unset;
 }
