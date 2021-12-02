@@ -39,3 +39,7 @@ div.hero section {
 .forecast{
     margin-top: unset;
 }
+section.contact-info {
+    margin-bottom: 0;
+    font-size:2.1vw;
+}

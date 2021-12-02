@@ -29,15 +29,7 @@ nav ul li.hide~* a {
     max-width: 100%;
 }
 
-.summary {
-    display: none !important;
-}
-.hero-small, .hero-small h4{
-    display: grid;
-    grid-template-columns: 170px;
-    position: sticky;
-    background: #cdd0f3;
-    color: black;
-    padding: 10px;
-    margin-top: 10px;
+section.contact-info {
+    margin-bottom: 0;
+    font-size:2.1vw;
 }

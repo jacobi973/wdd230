@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soda Springs Town Page</title>
     <meta name="description" content="Watching for all sorts of weather in Soda Springs Idaho">
-    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" rel="preload" as="style" href="../css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/small.css" media="(max-width: 850px)">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"rel="preload" as="style"  href="css/small.css" media="(max-width: 850px)">
+    <link rel="stylesheet" rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body onload='getTownWeather(5607916)'>
@@ -35,9 +35,9 @@
         <h2>Soda Springs Idaho</h2>
         <div class="hero">
             <picture>
-                <source srcset="./images/heroImage_2_750x300.jpg" media="(max-width: 750px)">
-                <source srcset="./images/heroImage_1_979x300.jpg" media="(max-width: 1250px)">
-                <img src="./images/heroImage_1920x300.jpg" alt="largeImg">
+                <source srcset="./images/heroImage_2_750x300.webp" media="(max-width: 750px)">
+                <source srcset="./images/heroImage_1_979x300.webp" media="(max-width: 1250px)">
+                <img src="./images/heroImage_1920x300.webp" alt="largeImg">
             </picture>
             <section class="summary">
                 <h4>Weather</h4>
@@ -90,7 +90,7 @@
         </section>
         <section class="article">
             <div class="img-holder">
-                <img src="./images/Monsoons_392x360.jpg" alt="article">
+                <img src="./images/Monsoons_392x360.webp" alt="article" loading="lazy">
             </div>
             <h2>Monsoons A Blowing</h2>
             <h4>By: University of California - Berkeley</h4>
@@ -109,7 +109,7 @@
         </section>
         <section class="contact-info">
             <iframe src="https://maps.google.com/maps?q=soda%20springs%20idhao&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
             <h3>Contact Information</h3>
             <ul class="fa-ul">
                 <li>123 Soda Springs, ID 88888</li>

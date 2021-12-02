@@ -34,7 +34,7 @@ async function getTownData() {
             let span3 = document.createElement('span');
             let span4 = document.createElement('span');
             let image = document.createElement('img');
-            let imageLocation = element.photo;
+            let imageLocation = element.photo.replace('.jpg', '.webp');
 
             h2.textContent = element.name;
             span1.textContent =  element.motto;
