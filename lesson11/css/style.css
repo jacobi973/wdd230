@@ -161,6 +161,11 @@ nav a:hover {
     color: white;
 }
 
+div.weather{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: span 2;
+}
 div.hero {
     z-index: 1;
     position: relative;

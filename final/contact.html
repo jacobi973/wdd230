@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-control" content="public">
+    <title>Home Page</title>
+    <meta name="description" content="Home Page of Storm Funnel">
+    <link rel="stylesheet" rel="preload" as="style" onload="this.rel='stylesheet'" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo_77x100.webp" alt="StormFunnel website logo">
+        <h1>Boise Chamber Of Commerce</h1>
+        </div>
+    </header>
+    <nav id='navbar'>
+        <ul>
+            <li class="toggler hide"><a onclick="toggleMenu()">Menu</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./boise.html">Boise</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+            <li><a class="at" href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="contact">
+        <section class="board">
+            <h2>Board of Directors</h2>
+            <div class="directors-grid">
+                <div>
+                    <img src="https://via.placeholder.com/150"
+                        data-src="https://www.boisechamber.org/uploads/1/1/1/7/111710579/artboard-14_1_orig.png"
+                        alt="placeholder">
+                    <p>Bill Connors</p>
+                    <p>President & CEO</p>
+                    <p>bconnors@boisechamber.org</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150"
+                        data-src="https://www.boisechamber.org/uploads/1/1/1/7/111710579/published/2019-staff-headshot-sandy-anderson.jpg?1632934025"
+                        alt="placeholder">
+                    <p>Sandy Anderson</p>
+                    <p>VP, Member Services</p>
+                    <p>sanderson​@boisechamber.org</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150"
+                        data-src="https://www.boisechamber.org/uploads/1/1/1/7/111710579/editor/debra-hackler-headshot-16_1.png?1526505265"
+                        alt="placeholder">
+                    <p>Debra Hackler</p>
+                    <p>Chief Financial Officer</p>
+                    <p>dhackler​@boisechamber.org</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150"
+                        data-src="https://www.boisechamber.org/uploads/1/1/1/7/111710579/editor/artboard-4_6.png?1628715204"
+                        alt="placeholder">
+                    <p>Paul Fleming</p>
+                    <p>Senior Account Manager</p>
+                    <p>sanderson@boisechamber.org</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150"
+                        data-src="https://www.boisechamber.org/uploads/1/1/1/7/111710579/editor/brandon-tarpley-headshot-final.jpg?1628715200"
+                        alt="placeholder">
+                    <p>​Brandon Tarpley</p>
+                    <p>Account Manager</p>
+                    <p>btarpley@boisechamber.org</p>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/150"
+                        data-src="https://www.boisechamber.org/uploads/1/1/1/7/111710579/editor/artboard-9_1.png?1628715212"
+                        alt="placeholder">
+                    <p>​Teresa Kirkmire</p>
+                    <p>Membership Coordinator</p>
+                    <p>tkirkmire@boisechamber.org</p>
+                </div>
+            </div>
+        </section>
+        <section class="form">
+            <h2>Contact Us</h2>
+            <form class="contact-grid" action="thanks.html" method="get">
+                <div class="person">
+                    <fieldset>
+                        <fieldset>
+                            <label for="first-name">First Name
+                                <input type="text" name="first-name" id="first-name" required
+                                    pattern="^((?:\s*[A-Za-z]\s*){2,})$">
+                            </label>
+                        </fieldset>
+                        <fieldset>
+                            <label for="last-name">Last Name
+                                <input type="text" name="last-name" id="last-name" required
+                                    pattern="^((?:\s*[A-Za-z]\s*){2,})$">
+                            </label>
+                        </fieldset>
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">Email
+                            <input type="email" name="email" id="email" required placeholder="fakeEmail@msn.com">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="phone">Cell Phone
+                            <input type="tel" name="phone" id="phone" placeholder="208-888-8888">
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="other">
+                    <fieldset>
+                        <label for="description">Comments
+                            <textarea name="description" id="description" rows="8" tabindex="0"></textarea>
+                        </label>
+                        <div id="button">
+                            <input type="submit" name="submit" id="submit" value="Contact Us" tabindex="0">
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </section>
+        <section class="contact-info">
+            <iframe title="Boise Map"
+                src="https://maps.google.com/maps?q=boise%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
+            <h3>Contact Information</h3>
+            <ul>
+                <li>1101 W. Front St., Suite 100</li>
+                <li>​Boise, Idaho 83702</li>
+                <li>Phone: (208) 472-5205</li>
+                <li>​info@boisechamber.org</li>
+            </ul>
+            <ul class="awesome">
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-facebook-square"></i>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&#169; <span id="copyrightyear"></span> Boise Idaho Chamber of Commerce | <a
+                href="attributions.html">Attributions</a></p>
+        Last Updated: <span id="last-updated"></span>
+    </footer>
+    <script defer src="./js/contact.js"></script>
+    <script defer src="../js/dates.js"></script>
+    <script defer src="js/script.js"></script>
+</body>
+
+</html>

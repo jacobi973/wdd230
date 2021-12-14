@@ -7,13 +7,13 @@ function toggleMenu() {
         document.querySelector(".toggler > a").innerHTML = "&#10060; Close"
     }
 }
-if (new Date().getDay() == 5) {
-    document.getElementById("banner").style.display = "grid"
-}
+// if (new Date().getDay() == 5) {
+//     document.getElementById("banner").style.display = "grid"
+// }
 
-function closeBanner() {
-    document.getElementById("banner").style.display = "none"
-}
+// function closeBanner() {
+//     document.getElementById("banner").style.display = "none"
+// }
 
 
 

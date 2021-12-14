@@ -1,0 +1,57 @@
+{
+    "business": [{
+            "name": "Garbonzos Pizza",
+            "photo": "garbonzos.jpg",
+            "motto": "Best pizza your tounge will taste.",
+            "yearFounded": 1858
+        },
+        {
+            "name": "Jungle Gym",
+            "photo": "jungle.jpg",
+            "motto": "Release the inner monkey inside you",
+            "yearFounded": 1864
+        },
+        {
+            "name": "Laser Tag",
+            "photo": "laser.jpg",
+            "motto": "PEW PEW",
+            "yearFounded": 1866
+        }, 
+        {
+            "name": "Cobalt Intelligence",
+            "photo": "garbonzos.jpg",
+            "motto": "Finding Data for you",
+            "yearFounded": 1972
+        },
+        {
+            "name": "Crown Kings",
+            "photo": "jungle.jpg",
+            "motto": "Inner King for the people",
+            "yearFounded": 2005
+        },
+        {
+            "name": "Gerbil Gerbil",
+            "photo": "laser.jpg",
+            "motto": "Watch Out here they come",
+            "yearFounded": 1988
+        },
+        {
+            "name": "Pasta Pasta",
+            "photo": "garbonzos.jpg",
+            "motto": "Eat the pasta italians have made",
+            "yearFounded": 2005
+        },
+        {
+            "name": "Cabellas",
+            "photo": "jungle.jpg",
+            "motto": "Hunt the hunt you want to",
+            "yearFounded": 1864
+        },
+        {
+            "name": "Fight Fight Fight",
+            "photo": "laser.jpg",
+            "motto": "WOW",
+            "yearFounded": 1866
+        }
+    ]
+}

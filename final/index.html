@@ -4,81 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-control" content="public">
     <title>Home Page</title>
-    <meta name="description" content="Home Page of Storm Funnel">
+    <meta name="description" content="Home Page of Boise Chamber of Commerce">
     <link rel="stylesheet" rel="preload" as="style" onload="this.rel='stylesheet'" href="../css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" rel="preload" as="style" onload="this.rel='stylesheet'" href="css/small.css"
-        media="(max-width: 850px)">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet" rel="preload"
-        as="style" onload="this.rel='stylesheet'">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="json" src="../json/businesses.json"></script>
 </head>
 
 <body>
     <header>
-        <img src="images/logo_77x100.webp" alt="StormFunnel website logo">
+        <img src="images/logo_77x100.webp" alt="Boise website logo">
         <h1>Boise Chamber Of Commerce</h1>
-        <section class="forecast">
-            <h2>3 Day Forecast</h2>
-            <div class="five-day" style="overflow-x:auto;">
-                <table class="tg">
-                    <thead>
-                        <tr>
-                            <th id="day1"><i class="fa fa-spinner fa-spin"></i>Loading</th>
-                            <th id="day2"><i class="fa fa-spinner fa-spin"></i>Loading</th>
-                            <th id="day3"><i class="fa fa-spinner fa-spin"></i>Loading</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <div id="weather-icon1"></div>
-                                <span id="temp1"><i class="fa fa-spinner fa-spin"></i>Loading</span>
-                            </td>
-                            <td>
-                                <div id="weather-icon2"></div>
-                                <span id="temp2"><i class="fa fa-spinner fa-spin"></i>Loading</span>
-                            </td>
-                            <td>
-                                <div id="weather-icon3"></div>
-                                <span id="temp3"><i class="fa fa-spinner fa-spin"></i>Loading</span>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
         </div>
     </header>
-    <nav>
+    <nav id='navbar'>
         <ul>
             <li class="toggler hide"><a onclick="toggleMenu()">Menu</a></li>
             <li><a class="at" href="./index.html">Home</a></li>
-            <li><a href="../lesson11/preston.html">Boise</a></li>
-            <li><a href="../lesson11/soda-springs.html">Join</a></li>
-            <li><a href="../lesson11/fish-haven.html">Directory</a></li>
-            <li><a href="../lesson8/stormcenter.html">Contact</a></li>
+            <li><a href="./boise.html">Boise</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+            <li><a href="./contact.html">Contact</a></li>
         </ul>
     </nav>
     <main>
         <article class="welcome-article">
-            <h2>Welcome To Boise</h2>
-            <p>
-                This is the site that will let you know how these small towns are doing! Check in on <b><a
-                        href="../lesson11/preston.html">Preston</a></b> and see if you can catch that Pancake
-                breakfast
-                hosted each week their. <b><a href="../lesson11/soda-springs.html">Soda Springs</a></b> has a geyers
-                with always unpredicable
-                weather. A trip there could make your week! Up for some fishing, catch them all in <b><a
-                        href="../lesson11/fish-haven.html">Fish
-                        Haven</a></b>. We will keep you up to date on the current weather that is happening there
-                and
-                make sure to warn you about any storms passing through. Don't forget to check out the <b><a
-                        href="../lesson7/gallery.html">Gallery</a></b> for some amazing photos that are changed each
-                week. Finally if you spot
-                a storm or are in danger let us know at our <b><a href="../lesson8/stormcenter.html">Storm
-                        Center</a></b>.
-            </p>
+
+            <div class="boise-forecast">
+                <h2>Overview of Boise Chamber Of Commerce</h2>
+                <p>
+                    We are the Boise Metro Chamber, and we serve as the region's advocate for a vibrant and prosperous
+                    economy and outstanding quality of life. The programs and services we provide supports four core
+                    areas: economic vitality, advocacy, member education, and member engagement. We currently serve
+                    1,850 member businesses representing 120,000+ employees through the Boise Metro area.
+                </p>
+            </div>
+            <img src="images/Boise_Visitors-bureau_800x600.webp" loading="lazy" alt="pizza">
         </article>
         <section class="join">
             <h2>Why Join the Boise Chamber Of Commerce</h2>
@@ -95,7 +59,7 @@
                     <h2>3</h2>
                     <p>Sponsor local events to embolden a sense of community.</p>
                 </div>
-                <a href="../lesson11/fish-haven.html"><button class="button">
+                <a href="./join.html"><button class="button">
                         <span class="button__text">
                             Join Now
                         </span>
@@ -108,23 +72,29 @@
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
-                    <img src="images/Boise_Visitors-bureau_800x600.webp" loading="lazy" alt="pizza">
+                    <img src="images/Job_Fair_Website_Slider_2021_0_800x600.webp" loading="lazy" alt="pizza">
                     <a href="https://web.boisechamber.org/events/IdahoJob%20%20Career%20Fair-8302/details"
                         target="_blank" rel="noopener noreferrer">
-                        <div class="text">Idaho Job and Career Fair (Click here for more details)</div>
+                        <div class="text one">Idaho Job and Career Fair (Click here for more details)</div>
                     </a>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
-                    <img src="images/Boise_Visitors-bureau_800x600.webp" loading="lazy" alt="pizza">
-                    <div class="text">Caption Two</div>
+                    <img src="images/idaho-christmas-lights_800x600.webp" loading="lazy" alt="pizza">
+                    <a href="https://web.boisechamber.org/events/IdahoJob%20%20Career%20Fair-8302/details"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="text">Christmas light show</div>
+                    </a>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
-                    <img src="images/Boise_Visitors-bureau_800x600.webp" loading="lazy" alt="pizza">
-                    <div class="text">Caption Three</div>
+                    <img src="images/boise_snow_800x600.webp" loading="lazy" alt="pizza">
+                    <a href="https://web.boisechamber.org/events/IdahoJob%20%20Career%20Fair-8302/details"
+                        target="_blank" rel="noopener noreferrer">
+                        <div class="text">Bogus Basin Lifts</div>
+                    </a>
                 </div>
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -138,28 +108,47 @@
         </div>
         <br>
         <h2>Sponsered Businesses</h2>
-        <div class="town-info"></div>
+        <div class="business"></div>
+        <div class="weather">
+            <h2>Weather</h2>
+            <section class="summary">
+                <div class="current-weather-header">
+                    <span>
+                        <h3>Current Weather</h3>
+                    </span></div>
+                <div class="current-weather">
+                    <span>Temperature: <span class="temperature">50</span>F&deg;</span>
+                    <span>Currently: <span class="currently">Cloudy</span></span>
+                    <span>Humidity: <span class="humidity">50</span></span></div>
+            </section>
+            <div class="weather-forecast"></div>
+        </div>
         <section class="contact-info">
-            <iframe title="Boise Map" src="https://maps.google.com/maps?q=boise%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            <iframe title="Boise Map"
+                src="https://maps.google.com/maps?q=boise%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
             <h3>Contact Information</h3>
-            <ul class="fa-ul">
+            <ul>
+                <li>1101 W. Front St., Suite 100</li>
+                <li>​Boise, Idaho 83702</li>
+                <li>Phone: (208) 472-5205</li>
+                <li>​info@boisechamber.org</li>
             </ul>
-            <div class="social-links">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
-                <a href="#" class="fa fa-google"></a>
-            </div>
+            <ul class="awesome">
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-facebook-square"></i>
+            </ul>
         </section>
     </main>
     <footer>
-        <div>
-            &copy; <span id="copyrightyear"></span> | Jacob Terrell | Idaho | <a href="https://www.byui.edu/online">BYUI
-                Online Learning</a>
-        </div>
+        <p>&#169; <span id="copyrightyear"></span> Boise Idaho Chamber of Commerce | <a
+                href="attributions.html">Attributions</a></p>
         Last Updated: <span id="last-updated"></span>
     </footer>
     <script defer src="../js/dates.js"></script>
+    <script defer src="js/business.js"></script>
+    <script defer src="js/weather.js"></script>
+    <script defer src="js/slideshow.js"></script>
     <script defer src="js/script.js"></script>
 </body>
 

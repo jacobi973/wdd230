@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-control" content="public">
+    <title>Join</title>
+    <meta name="description" content="Join Page">
+    <link rel="stylesheet" rel="preload" as="style" onload="this.rel='stylesheet'" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo_77x100.webp" alt="Boise Chamber website logo">
+        <h1>Boise Chamber Of Commerce</h1>
+        </div>
+    </header>
+    <nav id='navbar'>
+        <ul>
+            <li class="toggler hide"><a onclick="toggleMenu()">Menu</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./boise.html">Boise</a></li>
+            <li><a class="at" href="./join.html">Join</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="join">
+        <h2>Membership tiers</h2>
+        <div class="membership">
+            <section class="tier">
+                <h3>Non-Profit ($100)</h3>
+                <ul>
+                    <li>An exclusive, searchable listing in our membership directory</li>
+                    <li>Business-to-business and business-to-consumer referrals</li>
+                    <li>Advocacy and business development opportunities through industry-specific committees, councils,
+                        and task forces</li>
+                    <li>Free networking and social events each month at different Chamber member businesses</li>
+                    <li>Advocacy and business development opportunities</li>
+                </ul>
+            </section>
+            <section class="tier">
+                <h3 class="bronze">Bronze ($200)</h3>
+                <ul>
+                    <li>Free quarterly business education trainings and workshops</li>
+                    <li>Nationally recognized leadership development and young professionals programs</li>
+                    <li>Members-only registration pricing to more than 40 annual and seasonal events with premier
+                        speakers</li>
+                    <li>Communication and updates on events, programs, services, and community trends</li>
+                </ul>
+            </section>
+            <section class="tier">
+                <h3 class="silver">Silver ($400)</h3>
+                <ul>
+                    <li>Membership plaques and displays for your place of business</li>
+                    <li>Affordable marketing and sponsorship opportunities to our memberships</li>
+                    <li>Become a presidential influence</li>
+                    <li>Eat pie together with your favorite friends</li>
+                </ul>
+            </section>
+            <section class="tier gold">
+                <h3 class="gold">Gold ($1000)</h3>
+                <ul>
+                    <li>Recieve a GOLD medallion</li>
+                    <li>Eat with the President of the chambers himself</li>
+                    <li>Go to live meetings for the chamber of commerce with the potential to change stuff</li>
+                </ul>
+            </section>
+        </div>
+        <section class="form">
+            <h2>Become A Member</h2>
+            <form class="join-grid" action="congratulations.html" method="get">
+                <div class="person">
+                    <fieldset>
+                        <label for="first-name">First Name
+                            <input type="text" name="first-name" id="first-name" required
+                                pattern="^((?:\s*[A-Za-z]\s*){2,})$">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="last-name">Last Name
+                            <input type="text" name="last-name" id="last-name" required
+                                pattern="^((?:\s*[A-Za-z]\s*){2,})$">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="title">Title
+                            <input type="text" name="title" id="title">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">Email
+                            <input type="email" name="email" id="email" required placeholder="email@msn.com">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="phone">Cell Phone
+                            <input type="tel" name="phone" id="phone" placeholder="208-888-8888">
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="business-join">
+                    <fieldset>
+                        <label for="business-name">Business Name
+                            <input type="text" name="business-name" id="business-name" required>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="business-address">Business Address
+                            <input type="text" name="business-address" id="business-address">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="business-website">Business Website
+                            <input type="text" name="business-website" id="business-website">
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label for="membership-tier">
+                            <select id="membership-tier" name="membership-tier" required onchange="selectResponse()">
+                                <option value="" disabled selected>Membership tier</option>
+                                <option value="non-profit">Non-Profit ($100)</option>
+                                <option value="bronze">Bronze ($200)</option>
+                                <option value="silver">Silver ($400)</option>
+                                <option value="gold">Gold ($1000)</option>
+                            </select>
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="other">
+                    <fieldset>
+                        <label for="description">Business Description
+                            <textarea name="description" id="description" rows="8" tabindex="0"></textarea>
+                        </label>
+                        <div id="button">
+                            <input type="submit" name="submit" id="submit" value="Join" tabindex="0">
+                        </div>
+                    </fieldset>
+                </div>
+            </form>
+        </section>
+        <section class="contact-info">
+            <iframe title="Boise Map"
+                src="https://maps.google.com/maps?q=boise%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
+            <h3>Contact Information</h3>
+            <ul>
+                <li>1101 W. Front St., Suite 100</li>
+                <li>​Boise, Idaho 83702</li>
+                <li>Phone: (208) 472-5205</li>
+                <li>​info@boisechamber.org</li>
+            </ul>
+            <ul class="awesome">
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-facebook-square"></i>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&#169; <span id="copyrightyear"></span> Boise Idaho Chamber of Commerce | <a
+                href="attributions.html">Attributions</a></p>
+        Last Updated: <span id="last-updated"></span>
+    </footer>
+    <script defer src="../js/dates.js"></script>
+    <script defer src="js/script.js"></script>
+</body>
+
+</html>

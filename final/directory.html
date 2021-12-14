@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-control" content="public">
+    <title>Directory Page</title>
+    <meta name="description" content="Directory website page">
+    <link rel="stylesheet" rel="preload" as="style" onload="this.rel='stylesheet'" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="json" src="../json/businesses.json"></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo_77x100.webp" alt="Boise Chamber website logo">
+        <h1>Boise Chamber Of Commerce</h1>
+        </div>
+    </header>
+    <nav id='navbar'>
+        <ul>
+            <li class="toggler hide"><a onclick="toggleMenu()">Menu</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./boise.html">Boise</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a class="at" href="./directory.html">Directory</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main class="directory">
+        <h2>Directory</h2>
+        <button class="btn first grid-button" onclick=changeToGrid()>Grid</button>
+        <button class="btn first list-button" onclick=changeToList()>List</button>
+        <div class="directory-info list-layout"></div>
+        <section class="contact-info">
+            <iframe title="Boise Map"
+                src="https://maps.google.com/maps?q=boise%20idaho&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
+            <h3>Contact Information</h3>
+            <ul>
+                <li>1101 W. Front St., Suite 100</li>
+                <li>​Boise, Idaho 83702</li>
+                <li>Phone: (208) 472-5205</li>
+                <li>​info@boisechamber.org</li>
+            </ul>
+            <ul class="awesome">
+                <i class="fa fa-facebook-square"></i>
+                <i class="fa fa-facebook-square"></i>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&#169; <span id="copyrightyear"></span> Boise Idaho Chamber of Commerce | <a
+                href="attributions.html">Attributions</a></p>
+        Last Updated: <span id="last-updated"></span>
+    </footer>
+    <script defer src="js/directory.js"></script>
+    <script defer src="../js/dates.js"></script>
+    <script defer src="js/script.js"></script>
+</body>
+
+</html>
