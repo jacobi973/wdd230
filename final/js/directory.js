@@ -8,7 +8,7 @@ function changeToList(){
 }
 getBusinessInfo();
 async function getBusinessInfo() {
-    const requestURL = '../../json/businesses.json';
+    const requestURL = '../json/businesses.json';
     const responseJSON = await (await fetch(requestURL)).json();
 
     const towns = responseJSON['business'];
